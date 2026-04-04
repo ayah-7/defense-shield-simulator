@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Defense Shield Simulator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- LEFT: LOGIN -->
+    <div class="form-container">
+        <form id="loginForm">
+
+            <h1>Defense Shield Simulator</h1>
+            <p class="subtitle">Multi-layer authentication simulator</p>
+
+            <div class="icons-row">
+                <i class='bx bx-shield'></i>
+                <i class='bx bx-lock'></i>
+                <i class='bx bx-check-shield'></i>
+            </div>
+
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+
+            <!-- hidden initially -->
+            <input type="text" id="twoFA" placeholder="2FA Code" class="hidden">
+            
+            <p id="securityQuestion" class="hidden question">
+                What is the name of your first pet?
+            </p>
+            <input type="text" id="securityAnswer" placeholder="Security Answer" class="hidden">
+
+            <button type="submit">Login</button>
+
+            <div id="message"></div>
+
+        </form>
+    </div>
+
+    <!-- RIGHT: VISUAL PANEL -->
+    <div class="side-panel">
+        <h2>Defense Layer Active</h2>
+        <p>
+            Pass each verification step.  
+            Fail too many times and the system locks you out.
+        </p>
+
+        <i class='bx bxs-shield-plus big-icon'></i>
+    </div>
+
+</div>
+
+<script src="login_simulator.js"></script>
+</body>
+</html>
