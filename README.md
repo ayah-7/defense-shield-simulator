@@ -16,4 +16,4 @@ A multi-layer authentication simulator with an interactive game-based lockout sy
 - JavaScript
 - C++ (logic prototype)
 ## Link
-https://ayah-7.github.io/defense-shield-simulator/
+- https://ayah-7.github.io/defense-shield-simulator/
